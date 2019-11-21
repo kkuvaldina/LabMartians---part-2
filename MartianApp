@@ -1,0 +1,26 @@
+public class MartianApp 
+{
+	public static void main(String[] args) {
+	    
+	    Martian[] unknownInvaders = Martian.invade();
+	    for (Martian el : unknownInvaders) {
+		    el.doSomething();
+		}
+	    
+	    Martian[] invaders = Martian.invade(13);
+	    for (Martian el : invaders) {
+		    System.out.printf("%s ", el);
+		}
+	}
+	
+	public static void test() {
+		Martian myMartian = new Martian();
+		System.out.println(myMartian);
+		
+		Martian[] martians = {new Martian(), new Martian(), new Martian()};
+		
+		for (Martian el : martians) {
+		    el.doSomething();
+		}
+	}
+}
